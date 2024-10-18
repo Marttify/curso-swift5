@@ -32,6 +32,10 @@ let justMoreThanAMillion = 1_000_000.000_000_1
 //let cannotBeNegative: UInt8 = -1
 //let tooBig: UInt8 = UInt8.max + 1
 
+/*
+  No se pueden combinar diferentes tipos de datos numéricos (por ejemplo, UInt16 y UInt8).
+  Es recomendable ajustar el tamaño al tipo que ocupe más espacio para evitar incompatibilidades y que salte error.
+*/
 let twoThousand: UInt16 = 2_000
 let one: UInt8 = 1
 let twoThousandAndOne = twoThousand + UInt16(one)
