@@ -93,11 +93,18 @@ var userAge: Int?
 
 userAge = 31
 
+// el ?? operator nil coalescing
 var ageToBeUsed = userAge ?? defaultAge
 // ageToBeUsed = (userAge != nil ? userAge! : defaultAge)
 
+// Ejercicio: 
+var userDefault = "Martín Aguilar"
+var user: string?
+var username = user ?? userDefault
+
 let defaultColorName = "red"
 var userColorName: String? = "green"
+
 
 var colorNameToUse = userColorName ?? defaultColorName
 
