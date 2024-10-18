@@ -2,11 +2,11 @@ import UIKit
 
 let b = 10
 var a = 5
-a = b
+a = b // Cambio de una variable.
 
-let (x,y) = (1,2)
+let (x,y) = (1,2) // Variable Tubla con una constante.
 
-//let 2 = z
+//let 2 = z  No se puede por que 2 esta definido por un numero 
 
 if a == b {
   print("Los valores de a y b son iguales")
@@ -19,26 +19,32 @@ if a == b {
 
 "Hello " + "World"
 
-//D/d -> D == d*c+r
-9/4 //c
-9%4 //r
 
-9 == 4*2+1
+//D/d -> D == d*c+r
+// D == d*c+r -> formula de uclive [https://es.khanacademy.org/computing/computer-science/cryptography/modarithmetic/a/the-euclidean-algorithm]
+9/4 // Se obtiene el cociente unicamente
+9%4 // Se obtiene el resto
+
+9 == 4*2+1 // true
 
 
 -9%4 // -9 == -2*4 + (-1)
 
+
+//El operador unario lo que hace es pasar de positivo a negativo, de negativo a positivo.
 let five = 5
 let minusFive = -five
 let plusFive = -minusFive
 
 let minusSix = -6
-let alsoMinusSix = +minusSix
+let alsoMinusSix = +minusSix // el + es unario, sin embargo no invierte el resultado, y sirve para incrementar un determinado valor. Lo mismo con el - 
 
+// Ejemplo:
 var number = 5
 number += 3 //number = number + 3
 number -= 2 //number = number - 2
 
+// Buena practica indentar el codigo.
 1 == 1
 1 == 2
 1 != 2
@@ -57,12 +63,18 @@ if name == "Juan Gabriel" {
 }
 
 
-(1, "Juan Gabriel") < (2, "Ricardo Celis")
-(3, "Juan Gabriel") < (3, "Ricardo Celis")
-(3, "Ricardo") < (3, "Juan Gabriel")
-(4, "perro") == (4, "perro")
+(1, "Juan Gabriel") < (2, "Ricardo Celis") // true
+(3, "Juan Gabriel") < (3, "Ricardo Celis") // es true por que la j en el alfabeto esta antes que la r.
+(3, "Ricardo") < (3, "Juan Gabriel") // false
+(4, "perro") == (4, "perro") // true
 
-("perro", false) == ("perro", true)
+// ("perro", false) < ("perro", true) // no se puede aplicar a valores buleanos.
+("perro", false) == ("perro", true) // false
+
+// Ejercicio: 
+(26, "Martin Aguilar") < ( 31, "Juan Gabriel") // true
+(26, "Martin Aguilar") > ( 31, "Juan Gabriel") // false
+(26, "Martin Aguilar") == ( 31, "Juan Gabriel") // false
 
 /*
  if question {
