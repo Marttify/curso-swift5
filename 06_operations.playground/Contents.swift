@@ -146,6 +146,7 @@ myrange.contains(20)
 myrange.contains(10)
 myrange.contains(-4)
 
+
 let allowEntry = false
 
 if !allowEntry{
@@ -176,4 +177,15 @@ if enterDoorCode && passRetinaScan ||
     print("Has entrado")
 } else{
     print("Acceso denegado")
+}
+
+var mac = true
+var swift = true
+var programacion = true
+
+// 
+if mac && programacion || swift {
+  print("Vas a conseguir trabajo como IOS Developer 🏆")
+}else {
+  print("Segui practicando y dedicando tiempo, pronto vas a lograrlo. 💪🏽")
 }
