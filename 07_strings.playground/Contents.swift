@@ -10,8 +10,9 @@ let multiLineString = """
 
 print(multiLineString)
 
-
+//para que se vean los caracteres especiales, podes integrarlo al string con el \ haciendolo visible en pantalla.
 let wiseWords = "\"La imaginación es más importante que el saber\" - Albert Einstein"
+// \u = es igual a unicode
 let dolarSign = "\u{24}"
 let blackHeart = "\u{2665}"
 let heart = "\u{1F496}"
