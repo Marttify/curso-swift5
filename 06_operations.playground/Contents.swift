@@ -76,22 +76,14 @@ if name == "Juan Gabriel" {
 (26, "Martin Aguilar") > ( 31, "Juan Gabriel") // false
 (26, "Martin Aguilar") == ( 31, "Juan Gabriel") // false
 
-/*
- if question {
-    answer1
- } else{
-    answer2
- }
- */
 
-
-
+/* Operador ternario: */
 
 let contentHeight = 40
 var hasImage = true
 var rowHeight = 0
 
-rowHeight = contentHeight + (hasImage ? 50 : 10)
+rowHeight = contentHeight + (hasImage ? 50 : 10) // sugar syntax
 
 
 
