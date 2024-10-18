@@ -117,6 +117,7 @@ for idx in 1..<5{
 }
 
 let names = ["Ricardo", "Juan Gabriel", "Pedro"]
+// .count es para contar la cantidad de datos en el array. (como el .length en JavaScript)
 for i in 0..<names.count{
     print("La persona \(i+1) se llama \(names[i])")
 }
@@ -129,11 +130,21 @@ for name in names[..<2]{
     print(name)
 }
 
+//Esto sirve para crear un rango de numeros:
 let range = ...5 // -infinity...5
 range.contains(7)
 range.contains(4)
 range.contains(-2)
 
+// Ejercicio:
+
+let myrange = ...<25
+
+myrange.contains(30)
+myrange.contains(25)
+myrange.contains(20)
+myrange.contains(10)
+myrange.contains(-4)
 
 let allowEntry = false
 
