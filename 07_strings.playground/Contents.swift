@@ -44,6 +44,8 @@ print("a vale \(a) y b vale \(b) ")
 a = "D"
 print("a vale \(a) y b vale \(b) ")
 
+// 
+
 
 let name = "Juan Gabriel 😎"
 for ch in name {
@@ -63,6 +65,19 @@ nameString.append(exclamationMark)
 let multiplier = 3
 var message = "El producto de \(multiplier) x 3.5 da \(Double(multiplier)*3.5)"
 message.append(exclamationMark)
+
+// Ejercicio 1:
+let timezone : Character = "🇦🇷"
+let myNameChars: [Character] = ["M", "a", "r", "t", "i","n"]
+var myNameString = String(myNameChars)
+myNameString.append(timezone)
+
+// Ejercicio 2:
+var dividendo = 10 
+for ch in 1...5 {
+    print(ch * dividendo)
+}
+
 
 let greeting = "Hola, ¿que tal?"
 greeting[greeting.startIndex]
