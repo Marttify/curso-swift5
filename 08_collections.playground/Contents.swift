@@ -71,6 +71,14 @@ for (idx, item) in shoppingList.enumerated(){
     print("Item \(idx+1): \(item) ")
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Ejercicio: Tomar un array, enumerar el items y que continen ese items, para ver que contiene ese items. para repasar los bucles.
+for (index, items) in myArrayCollectionsString.enumerated(){
+    print("Item \(index+1): \(items)")
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 //Conjunto (Set)
