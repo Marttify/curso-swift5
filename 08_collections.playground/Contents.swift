@@ -4,18 +4,20 @@ import UIKit
 //Conjuntos
 //Diccionarios
 
+// Las colecciones, nos van a permitir tener mas de 1 valor en una variable.
+// Existen diversos tipos de colecciones, cuidado con el termino.
 
 //ARRAY
 var someInts = [Int]()
 someInts.count
-someInts.append(31)
-someInts.count
-someInts = []
+someInts.append(31) // Agregar un elemento, en este caso un numero
+someInts.count // Identificar la cantidad
+someInts = [] // Es una forma rapida de declarar un array vacio, o vaciar un array
 someInts.count
 
 
 var someDoubles = Array(repeating: 3.141592, count: 3)
-someDoubles.count
+someDoubles.countf
 
 var moreDoubles = Array(repeating: 2.5, count: 4)
 
@@ -25,6 +27,15 @@ aLotOfDoubles.count
 var shoppingList : [String] = ["Papas", "Pimiento", "Tortillas", "Cerdo", "Cebolla"]
 shoppingList.count
 
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Ejercicios: Crear un array con nombres
+
+var myArrayCollectionsString : [String] = ["Martin", "Ricardo", "Juan", "Sofia", "María", "Pedro", "Luis"]
+var myArrayCollectionsInt : [Int] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
 if shoppingList.isEmpty {
     print("La lista de la compra está vacía")
