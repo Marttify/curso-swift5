@@ -17,7 +17,7 @@ someInts.count
 
 
 var someDoubles = Array(repeating: 3.141592, count: 3)
-someDoubles.countf
+someDoubles.count
 
 var moreDoubles = Array(repeating: 2.5, count: 4)
 
