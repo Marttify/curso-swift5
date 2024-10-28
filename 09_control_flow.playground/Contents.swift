@@ -14,9 +14,42 @@ for (animalName, legCount) in numberOfLegs{
     print("Animal: \(animalName), número de patas: \(legCount)")
 }
 
-for idx in 1...5{
+
+//////////////////////////////////////////////////////////////////////////
+//practices:
+
+for idx in 1...10{
+    print("\(idx) x 1 = \(idx*1)")
+}
+for idx in 1...10{
+    print("\(idx) x 2 = \(idx*2)")
+}
+for idx in 1...10{
     print("\(idx) x 3 = \(idx*3)")
 }
+for idx in 1...10{
+    print("\(idx) x 4 = \(idx*4)")
+}
+for idx in 1...10{
+    print("\(idx) x 5 = \(idx*5)")
+}
+for idx in 1...10{
+    print("\(idx) x 6 = \(idx*6)")
+}
+for idx in 1...10{
+    print("\(idx) x 7 = \(idx*7)")
+}
+for idx in 1...10{
+    print("\(idx) x 8 = \(idx*8)")
+}
+for idx in 1...10{
+    print("\(idx) x 9 = \(idx*9)")
+}
+for idx in 1...10{
+    print("\(idx) x 10 = \(idx*10)")
+}
+
+//////////////////////////////////////////////////////////////////////////
 
 let base = 2
 let power = 10
@@ -34,6 +67,24 @@ for tickMark in stride(from: 0, to: minutes, by: minuteInterval){
     print("\(hour) : \(tickMark)")
 }
 
+
+//////////////////////////////////////////////////////////////////////////
+//activity:
+
+let minutesDay = 60
+let minuteIntervalDay = 60
+
+for hour in stride(from: 0, through: 12, by: 3) {
+    for tickMark in stride(from: 0, to: minutesDay, by: minuteIntervalDay) {
+        print("\(hour) : \(tickMark)")
+    }
+}
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
 //Bucle While
 
 var i = 0
@@ -42,11 +93,44 @@ while i <= 10 {
 }
 print(i)
 
-repeat {
-    i += 1
-} while i <= 10
 
-print(i)
+
+//////////////////////////////////////////////////////////////////////////
+//activity:
+//Tomar un numero o dos entre 1 y 100. y calcular cuales son numeros primo
+
+let limite = 100
+var esPrimo = Array(repeating: true, count: limite + 1)
+
+esPrimo[0] = false
+esPrimo[1] = false
+
+var numero = 2
+while numero * numero <= limite {
+    if esPrimo[numero] {
+        var multiple = numero * numero
+        while multiple <= limite {
+            esPrimo[multiple] = false
+            multiple += numero
+        }
+    }
+    numero += 1
+}
+
+print("Números primos entre 1 y \(limite):")
+var p = 2
+while p <= limite {
+    if esPrimo[p] {
+        print(p)
+    }
+    p += 1
+}
+
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
 
 // If y Else
 var temp = 30
