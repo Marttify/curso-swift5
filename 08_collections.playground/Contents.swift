@@ -10,21 +10,18 @@ import UIKit
 //ARRAY
 var someInts = [Int]()
 someInts.count
-someInts.append(31) // Agregar un elemento, en este caso un numero
-someInts.count // Identificar la cantidad
-someInts = [] // Es una forma rapida de declarar un array vacio, o vaciar un array
+someInts.append(31)
+someInts.count
+someInts = []
 someInts.count
 
 
 var someDoubles = Array(repeating: 3.141592, count: 3)
 someDoubles.count
-
 var moreDoubles = Array(repeating: 2.5, count: 4)
-
 var aLotOfDoubles = someDoubles + moreDoubles
 aLotOfDoubles.count
-
-var shoppingList : [String] = ["Papas", "Pimiento", "Tortillas", "Cerdo", "Cebolla"]
+var shoppingList : [String] = ["Papas", "Pimiento rojo", "queso rallado", "Carne picada", "Cebolla", "Pera"]
 shoppingList.count
 
 
@@ -43,10 +40,10 @@ if shoppingList.isEmpty {
     print("Mandemos a Ricardo a comprar")
 }
 
-shoppingList.append("Coca Cola")
+shoppingList.append("Agua")
 shoppingList.count
 
-shoppingList += ["Totopos", "Guacamole", "Pico de Gallo"]
+shoppingList += ["Zanahoria", "Leche", "Manteca"]
 shoppingList.count
 
 var firstElement = shoppingList[0]
@@ -54,10 +51,10 @@ shoppingList[0] = "Huevos"
 shoppingList
 shoppingList[5]
 shoppingList[4...6]
-shoppingList[4...6] = ["Naranja", "Plátano", "Mango"]
+shoppingList[3...5] = ["aceite", "Pimienta", "Sal", "Nuez moscada", "Papa"]
 shoppingList
 
-let pepper = shoppingList.remove(at: 1)
+let pepper = shoppingList.remove(at: 3)
 shoppingList
 
 let _ = shoppingList.removeLast()
@@ -90,27 +87,27 @@ letters.insert("b")
 letters
 
 
-var favouriteGames : Set<String> = ["Final Fantasy", "World of Warcraft", "Farcry"]
-favouriteGames.count
+var favouriteTools : Set<String> = ["IOS", "Swift", "Xcode"]
+favouriteTools.count
 
 
-if favouriteGames.isEmpty{
-    print("No hay juegos favoritos")
+if favouriteTools.isEmpty{
+    print("No hay herramientas favoritas")
 }
 
-favouriteGames.insert("Metal Gear")
+favouriteTools.insert("GitHub")
 
-if let removedGame = favouriteGames.remove("Farcry"){
-    print("He eliminado de la lista \(removedGame)")
+if let removedGame = favouriteTools.remove("GitHub"){
+    print("Elimine de la lista, a \(removedGame)")
 }
 
-if favouriteGames.contains("Metal Gear"){
-    print("Me encanta ese juego")
+if favouriteTools.contains("Xcode"){
+    for vg in favouriteTools.sorted() {
+        print("Me encanta esa herramienta \(vg)")
+    }
 }
 
-for vg in favouriteGames.sorted() {
-    print(vg)
-}
+print(favouriteTools)
 
 let oddDigits: Set = [1,3,5,7,9]
 let evenDigits: Set = [0,2,4,6,8]
