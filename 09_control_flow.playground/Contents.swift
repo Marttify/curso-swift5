@@ -276,3 +276,18 @@ if #available(iOS 12, macOS 10.12, *){
 }else{
     //Mantener el código viejo con versiones anteriores de iOS, macOS...
 }
+
+//Verificación de versiones específicas de frameworks o características
+if #available(iOS 15, *) {
+    // Funciones de iOS 15 o superiores
+} else {
+    // Compatibilidad con versiones anteriores
+}
+
+//Verificación de orientación de pantalla
+if UIDevice.current.orientation.isLandscape {
+    // Código para orientación horizontal
+} else {
+    // Código para orientación vertical
+}
+
