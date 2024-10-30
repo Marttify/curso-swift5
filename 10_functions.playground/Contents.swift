@@ -5,13 +5,13 @@ func greeting(person: String) -> String {
     return greet
 }
 
-greeting(person: "Ricardo Celis")
+greeting(person: "Martí Aguilar")
 greeting(person: "Edgar")
 greeting(person: "Juan Gabriel")
 
 
 func sayHelloWorld() -> String {
-    return "Hello World"
+    return "Hola Mundo"
 }
 
 sayHelloWorld()
@@ -25,14 +25,14 @@ func greeting(person: String, isMale:Bool) -> String {
         return "Bienvenida Señorita \(person)"
     }
 }
-greeting(person: "RicardoCelis", isMale: true)
-greeting(person: "Olivia", isMale: false)
+greeting(person: "Martify", isMale: true)
+greeting(person: "Malena", isMale: false)
 
 
 func greet2(person:String){
     print("Hola \(person)")
 }
-greet2(person: "Ricardo Celis")
+greet2(person: "Martí Aguilar")
 greet2(person: "Edgar")
 
 func printAndCount(string : String) -> Int{
@@ -44,13 +44,13 @@ func printWithoutCounting(string: String){
     let _ = printAndCount(string: string)
 }
 
-printAndCount(string: "Hola que tal")
+printAndCount(string: "Hola como va")
 printWithoutCounting(string: "Hola que tal")
 
 
 func minMax(array:[Int]) -> (min: Int, max: Int)?{
     
-    if array.isEmpty { return nil }
+    if array.isEmpty { return nil } // si el array esta vacio, devuelve nulo
     
     var currentMin = array[0]
     var currentMax = array[0]
@@ -83,7 +83,7 @@ someFunction(f1: 5)
 func greeting(_ person: String,from hometown: String) -> String {
     return "Hola \(person) un placer que no visites desde \(hometown)"
 }
-greeting("Juan Gabriel", from: "Mallorca")
+greeting("Martin Aguilar", from: "Argentina")
 
 
 
@@ -129,21 +129,30 @@ func multiplyTwoInts(_ a: Int, _ b: Int ) -> Int{
 }//(Int, Int) -> Int
 
 func printHW(){
-    print("Hello World")
+    print("Hola Mundo")
 } //() -> Void
 
 var mathFunction: (Int, Int) -> Int = multiplyTwoInts
-mathFunction(4,5)
+mathFunction(5,5)
 
 
-
+////////////////////////////////////////////////////////////
+//Correccion de la explicación
 func printMathResult(_ mathFunc: (Int, Int) -> Int, _ a: Int, _ b: Int){
-    print("Resultado: \(mathFunction(a,b))")
+    print("Resultado: \(mathFunc(a,b))")
 }
 
-printMathResult(multiplyTwoInts, 5, 9)
+printMathResult(mathFunction, 5, 9)
 
 
+func printMathResultTest(_ a: Int, _ b: Int){
+    print("Resultado: \(addTwoInts(a,b))")
+}
+
+printMathResultTest(5, 9)
+
+
+////////////////////////////////////////////////////////////
 
 
 func chooseStepFunction(backward: Bool ) -> (Int) -> Int {
