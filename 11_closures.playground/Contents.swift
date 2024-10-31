@@ -56,6 +56,35 @@ let numberStrings = numbers.map { (number) -> String in
 }
 
 
+
+///////////////////////////////////////////////////////////////
+///Ejercicio
+
+let numbersTest = [-9, 34 , -23, -2127 ,46, -6]
+
+let numbersStrings = numbersTest.map{ (number) -> String in
+       
+    var number = number
+    var output = ""
+    let negative = number
+    let minus = "menos"
+    
+    number = number < 0 ? number * -1 : number
+
+    repeat{
+        output = digitNames[number%10]! + output
+        number /= 10
+    }while number > 0
+    
+    output = negative < 0 ? minus + output : output
+    
+    return output
+}
+
+print(numbersStrings)
+
+///////////////////////////////////////////////////////////////
+
 func makeIncrementer(forIncrement amount: Int) -> () -> Int {
     var runningTotal = 0
     func incrementer() -> Int {
